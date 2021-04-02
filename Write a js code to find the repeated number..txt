@@ -1,0 +1,20 @@
+
+function findDuplicateData(a){
+ let countExtraData = {}
+
+ for(let i =0; i < a.length; i++){ 
+     if (countExtraData[a[i]]){
+     countExtraData[a[i]] += 1
+     } else {
+     countExtraData[a[i]] = 1
+     }
+    }  
+    for (let data in countExtraData){
+        if (countExtraData[data] >= 2){
+            console.log(data + " counted: " + countExtraData[data] + " times.")
+        }
+    }
+  console.log(countExtraData)
+}
+
+findDuplicateData([4,3,6,3,4,3])
