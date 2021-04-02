@@ -1,0 +1,10 @@
+
+function EvenNo(array){
+  let arr = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i] % 2 === 0){
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+} EvenNo([11,13,9,3,1,2,3,4,6,8,10])
