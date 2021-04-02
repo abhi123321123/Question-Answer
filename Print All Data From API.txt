@@ -1,0 +1,22 @@
+
+    
+ 
+class App extends React.Component{
+  constructor(){
+    super()
+    this.state={
+      data:[]
+    }
+  }
+  componentDidMount(){
+     this.getData()
+  }
+  async getData(){
+    fetch('http://www.example.com/api/get/1', ).then((res)=>{res.json()})
+    .then(res=>console.log('data'+res))
+  }
+  render(){
+    return(<View style={{flex:1,backgroundColor:"green"}}></View>)
+  }
+}
+export default App
